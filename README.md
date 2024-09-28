@@ -1,7 +1,7 @@
 # MERN Stack Docker Setup
 
-This repository is forked from [text](https://github.com/balavi7/MERN-Docker-Compose.git). 
-I added my Dockerfiles to the frontend and backend, Docker compose file and add a makefile to it for better usage
+This repository is forked from this [repo](https://github.com/balavi7/MERN-Docker-Compose.git). 
+I added my Dockerfiles to the frontend and backend, Docker compose file and add a makefile to it for better usage.
 MERN (MongoDB, Express, React, Node.js) stack application. The setup includes Docker
 containers for the frontend, backend, and MongoDB services, along with a Docker network and volume configuration.
 
