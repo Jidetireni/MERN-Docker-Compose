@@ -1,0 +1,21 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: 
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Build the frontend Docker image
+      run: |
+        docker build ./mern/frontend --file Dockerfile --tag tireni/mern-frontend:$(date +%s)
+
+    - name: Build the backend Docker image
+      run: |
+        docker build ./mern/backend --file Dockerfile --tag tireni/mern-backend$(date +%s)
